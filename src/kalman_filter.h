@@ -61,6 +61,7 @@ public:
   /**
    * Updates the state by using Extended Kalman Filter equations
    * @param z The measurement at k+1
+   * @param Hj The Jacobian matrix
    */
   void UpdateEKF(const Eigen::VectorXd &z);
 
